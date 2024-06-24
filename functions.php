@@ -1,9 +1,9 @@
 <?php
 function connectDatabase() {
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "task_manager";  // Zmieniono nazwę bazy danych
+    $servername = "listazadan-db.mysql.database.azure.com";
+    $username = "adminuser";
+    $password = "Password123";
+    $dbname = "task_manager"; 
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -12,7 +12,6 @@ function connectDatabase() {
     }
     return $conn;
 }
-
 function registerUser($username, $password) {
     $conn = connectDatabase();
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);

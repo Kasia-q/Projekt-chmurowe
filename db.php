@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "shopping_list";
+$servername = "listazadan-db.mysql.database.azure.com";
+$username = "adminuser";
+$password = "Password123";
+$dbname = "task_manager";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
